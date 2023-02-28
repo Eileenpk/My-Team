@@ -1,0 +1,62 @@
+/* Typography  */
+.link {
+    font-family: var(--font-family);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: var(--font-color);
+    }
+
+.navClosedContainer {
+    width: 100%;
+}
+.navClosed {
+    transition: transform 0.3s ease-in-out; 
+    transform: translateX(100vw);
+} 
+
+.navScreenOverLay {
+    position: absolute;
+    z-index: 1;
+    top: 0rem;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #00000079;
+    transition: transform 0.3s ease-in-out; 
+    transform: translateX(0%);
+}
+
+.navContainer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 255px;
+    height: 100vh;
+    background: var(--main-color);
+}
+
+/* Enable hover only on non-touch devices */
+@media (hover: hover) and (pointer: fine) {
+    .hamburgerMenu:hover g,
+    .closeMenu:hover path {
+      fill: var(--second-color);
+    }
+
+    .button:hover {
+        opacity: 59%;
+    }
+  
+  }
+
+
+
+
+
+
