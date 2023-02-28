@@ -1,21 +1,27 @@
 import Link from "next/link";
 import styles from "@/styles/nav.module.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import Logo from "@/public/images/logo.svg";
 import GetWindowWidth from "./functions/GetWindowWidth";
 export default function Nav() {
+  // window width logic
   const { width } = GetWindowWidth();
+
+  useEffect(() => {
+    setIsNavOpen(false);
+  }, [width > 768]);
+
   const [isNavOpen, setIsNavOpen] = useState(false);
 
   return (
-    <nav className={`${styles.nav} mt-12 px-6 flex items-start`}>
+    <nav className={`${styles.nav} mt-12 px-6 md:px-10 flex items-start md:mt-16`}>
       <div
         className={`flex items-center justify-between ${styles.navClosedContainer}`}
       >
-        <Image src={Logo} width={128} height={32} alt="My Team" />
+        <Image src={Logo} width={128} height={32} alt="My Team" className={`mr-12 ${styles.logo}`}/>
 
-        <svg
+       {width < 768 && <svg
           xmlns="http://www.w3.org/2000/svg"
           width="20"
           height="17"
@@ -27,7 +33,26 @@ export default function Nav() {
           <g fill="#FFF" fillRule="evenodd">
             <path d="M0 0h20v3H0zM0 7h20v3H0zM0 14h20v3H0z" />
           </g>
-        </svg>
+        </svg>}
+
+        {width > 768 ? (
+          <div className={`flex items-center gap-6 ${styles.navLinks}`}>
+            <Link className={`${styles.link} font-semibold link`} href="/">
+              home
+            </Link>
+            <Link className={`${styles.link} font-semibold link`} href="/About">
+              about
+            </Link>
+            <Link
+              className={`mt-0 ml-auto ${styles.link} ${styles.button} font-semibold button`}
+              href="/Contact"
+            >
+              contact us
+            </Link>
+          </div>
+        ) : (
+          ""
+        )}
       </div>
 
       <div

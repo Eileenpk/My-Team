@@ -9,6 +9,12 @@
     color: var(--font-color);
     }
 
+.nav {
+    max-width: 1110px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .navClosedContainer {
     width: 100%;
 }
@@ -40,6 +46,19 @@
     width: 255px;
     height: 100vh;
     background: var(--main-color);
+}
+
+@media(min-width:768px) {
+    .navLinks {
+        width: 100%;
+    }
+}
+
+@media(min-width:1200px) {
+    .logo {
+        width: 160px;
+        height: 40px;
+    }
 }
 
 /* Enable hover only on non-touch devices */
