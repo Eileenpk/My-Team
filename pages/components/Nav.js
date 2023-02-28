@@ -3,22 +3,17 @@ import styles from "@/styles/nav.module.css";
 import { useState } from "react";
 import Image from "next/image";
 import Logo from "@/public/images/logo.svg";
-
+import GetWindowWidth from "./functions/GetWindowWidth";
 export default function Nav() {
+  const { width } = GetWindowWidth();
   const [isNavOpen, setIsNavOpen] = useState(false);
 
-  console.log(isNavOpen);
   return (
     <nav className={`${styles.nav} mt-12 px-6 flex items-start`}>
       <div
         className={`flex items-center justify-between ${styles.navClosedContainer}`}
       >
-        <Image
-          src={Logo}
-          width={128}
-          height={32}
-          alt="My Team"
-        />
+        <Image src={Logo} width={128} height={32} alt="My Team" />
 
         <svg
           xmlns="http://www.w3.org/2000/svg"
