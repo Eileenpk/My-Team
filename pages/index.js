@@ -12,7 +12,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <h1>test</h1>
+      <h1 className="text-5xl font-bold underline">
+      testing!
+    </h1>
+
       </main>
     </>
   )
