@@ -58,6 +58,25 @@
     }
 }
 
+@media(min-width:1200px) {
+    .footer {
+        padding-left: 14%;
+        padding-right: 14%;
+        grid-template-areas: 
+        "logo address . social"
+        "links address . copyright";
+    }
+
+    .logo {
+        width: 160px;
+        height: 40px;
+    }
+
+    .address {
+        text-align: left;
+    }
+}
+
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
     .socialIcon:hover path {
