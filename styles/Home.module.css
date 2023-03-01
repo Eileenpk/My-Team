@@ -5,16 +5,6 @@
   background-size: contain;
 }
 
-.heading {
-  font-family: var(--font-family);
-  font-size: 40px;
-  font-weight: 700;
-  line-height: 40px;
-  letter-spacing: 0px;
-  text-align: center;
-  color: var(--font-color);
-}
-
 .headingSpan {
   color: var(--second-color);
 }
@@ -23,13 +13,7 @@
   display: none;
 }
 .headingText {
-  font-family: var(--font-family);
-  font-size: 15px;
-  font-weight: 600;
   line-height: 28px;
-  letter-spacing: 0px;
-  text-align: center;
-  color: var(--font-color);
 }
 
 @media(min-width:768px) {
@@ -38,17 +22,12 @@
     background-size: unset;
   }
 
-  .heading {
-    font-size: 64px;
-    line-height: 56px;
-  }
-
   .headingText {
     max-width: 457px;
   }
 }
 
-@media(min-width:1200px) {
+@media(min-width:1280px) {
 
   .header {
     padding-left: 11.5%;
@@ -59,9 +38,6 @@
     background-size: unset;
   }
   .heading {
-    font-size: 100px;
-    line-height: 100px;
-    text-align: left;
     width: 635px;
   }
 
