@@ -12,7 +12,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <header>
-        <Nav />
+      
       </header>
       <main className={styles.main}>
       <h1 className="text-5xl font-bold underline">
