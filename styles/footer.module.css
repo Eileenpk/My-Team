@@ -60,8 +60,8 @@
 
 @media(min-width:1200px) {
     .footer {
-        padding-left: 14%;
-        padding-right: 14%;
+        padding-left: 11.5%;
+        padding-right: 11.5%;
         grid-template-areas: 
         "logo address . social"
         "links address . copyright";

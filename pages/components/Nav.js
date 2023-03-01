@@ -15,7 +15,7 @@ export default function Nav() {
   const [isNavOpen, setIsNavOpen] = useState(false);
 
   return (
-    <nav className={`${styles.nav} mt-12 px-6 md:px-10 flex items-start md:mt-16`}>
+    <nav className={`${styles.nav} mt-12 xl:mt-[73px] px-6 md:px-10 flex items-start md:mt-16`}>
       <div
         className={`flex items-center justify-between ${styles.navClosedContainer}`}
       >

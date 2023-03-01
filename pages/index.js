@@ -11,9 +11,22 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <header></header>
+      <header
+        className={`pt-20 px-6 flex flex-col items-center xl:flex-row xl:pt-[129px] xl:pb-[250px] xl:items-end ${styles.header}`}
+      >
+        <h1 className={`mb-5 md:mb-6 xl:mb-0 xl:mr-[30px] ${styles.heading}`}>
+          Find the <br /> best{" "}
+          <span className={`${styles.headingSpan}`}>talent</span>
+        </h1>
+        
+        <p className={` mb-48 md:mb-64 xl:mb-0 xl:ml-auto ${styles.headingText}`}>
+        <span className={styles.bar}></span>
+          Finding the right people and building high performing teams can be
+          hard. Most companies aren’t tapping into the abundance of global
+          talent. We’re about to change that.
+        </p>
+      </header>
       <main className={styles.main}>
-        <h1 className="text-5xl font-bold underline">testing!</h1>
         <GetStarted />
       </main>
     </>
