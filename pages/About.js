@@ -1,4 +1,5 @@
 import styles from "@/styles/about.module.css"
+import GetStarted from "./components/GetStarted"
 export default function About () {
     return (
         <>
@@ -8,7 +9,7 @@ export default function About () {
             <span className={styles.bar}></span>We help companies build dynamic teams made up of top global talent. Using our network of passionate professionals we drive innovation and deliver incredible outcomes. Talented, diverse teams shape the best products and experiences. We’ll bring those teams to you.</p>
         </header>
         <main>
-
+            <GetStarted />
         </main>
         </>
         
