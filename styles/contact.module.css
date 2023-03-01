@@ -6,3 +6,20 @@
     text-align: center;
     color: var(--second-color);
 }
+
+@media(min-width:768px) {
+
+    .header {
+        background-image: url(../public/images/bg-pattern-about-2-contact-1.svg);
+        background-repeat: no-repeat;
+        background-position: top 80px left -100px;
+    }
+    .headerText {
+        font-size: 32px;
+        line-height: 48px;
+    }    
+}
+
+@media(min-width:1280px) {
+    
+}
