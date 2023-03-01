@@ -25,7 +25,38 @@
 }
 
 
+@media(min-width:768px) {
+    .footer {
+        display: grid;
+        grid-template-areas: 
+        "logo address"
+        "links address"
+        "social copyright";
+    }
 
+    .logo {
+        grid-area: logo;
+    }
+
+    .address {
+        grid-area: address;
+        text-align: right;
+        margin-right: 10px;
+    }
+
+    .navLinks {
+        grid-area: links;
+    }
+
+    .socialLinksContainer {
+        grid-area: social;
+    }
+
+    .copyright {
+        grid-area: copyright;
+        text-align: right;
+    }
+}
 
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {

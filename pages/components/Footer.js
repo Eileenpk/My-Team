@@ -4,15 +4,15 @@ import Logo from "@/public/images/logo.svg";
 import styles from "@/styles/footer.module.css";
 export default function Footer() {
   return (
-    <footer className={`flex flex-col items-center pt-16 ${styles.footer}`}>
+    <footer className={`flex flex-col items-center pt-16 md:px-10 md:py-14 ${styles.footer}`}>
       <Image
         src={Logo}
         width={96}
         height={24}
         alt="My team"
-        className={`mb-12`}
+        className={`mb-12 md:mb-14 ${styles.logo}`}
       />
-      <nav className={`mb-6`}>
+      <nav className={`mb-6 md:mb-8 ${styles.navLinks}`}>
         <Link href="/" className={`mr-6 ${styles.navLink}`}>
           home
         </Link>
@@ -20,7 +20,7 @@ export default function Footer() {
           about
         </Link>
       </nav>
-      <address className={`mb-10 ${styles.address}`}>
+      <address className={`mb-10 md:mb-9 ${styles.address}`}>
         987 Hillcrest Lane <br />
         Irvine, CA <br />
         California 92714
@@ -28,7 +28,7 @@ export default function Footer() {
         Call Us : 949-833-7432
       </address>
       <section
-        className={`flex gap-4 mb-4 items-baseline ${styles.socialLinksContainer}`}
+        className={`flex gap-4 mb-4 md:mb-0 items-baseline ${styles.socialLinksContainer}`}
       >
         <Link href="https://www.facebook.com/">
           <svg
@@ -76,7 +76,7 @@ export default function Footer() {
         </Link>
       </section>
 
-      <p className={`mb-16 ${styles.copyright}`}>Copyright 2020. All Rights Reserved</p>
+      <p className={`mb-16 md:mb-0 ${styles.copyright}`}>Copyright 2020. All Rights Reserved</p>
     </footer>
   );
 }
