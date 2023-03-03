@@ -62,9 +62,15 @@
     height: 107px;
 }
 
+.error {
+    align-self: flex-start;
+    margin-left: 14px;
+    margin-top: -16px;
+}
 
-
-
+.error .errorText {
+    color: var(--second-color);
+}
 
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
@@ -80,6 +86,7 @@
 
     .input:hover::placeholder {
         color: var(--second-color);
+        opacity: 0.6;
     }
 
   }
