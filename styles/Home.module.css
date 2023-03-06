@@ -65,7 +65,7 @@
 }
 
 @media(min-width:768px) {
-
+  /* header section */
   .header {
     background-size: unset;
   }
@@ -73,10 +73,14 @@
   .headingText {
     max-width: 457px;
   }
+
+  /* delivering section */
+  .deliveringHeading2Span {
+    display: block;
+  }
 }
 
 @media(min-width:1280px) {
-  /* typography */
 
 /* header */
   .header {
@@ -114,6 +118,11 @@
   }
   .buildContainer {
     max-width: 1110px;
+  }
+
+  /* delivering section */
+  .deliveringHeading2Span {
+    display: inline;
   }
 }
 

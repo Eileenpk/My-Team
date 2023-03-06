@@ -62,12 +62,12 @@ export default function Home() {
           </div>
         </section>
 
-        <section className={` pt-[140px] pb-[116px] px-[6%] ${styles.delivering}`}>
-          <h2 className={`mb-12 ${styles.deliveringHeading2}`}>
+        <section className={` pt-[140px] pb-[116px] px-[6%] md:flex md:flex-col md:items-center ${styles.delivering}`}>
+          <h2 className={`mb-12 md:w-[573px] xl:w-[932px] ${styles.deliveringHeading2}`}>
             Delivering real results for top companies. Some of our{" "}
             <span className={`${styles.deliveringHeading2Span}`}>success stories.</span>
           </h2>
-          <section className={` ${styles.quoteSection}`}>
+          <section className={`xl:flex  xl:gap-[30px] ${styles.quoteSection}`}>
             <SuccessCard
               src="/images/avatar-kady.jpg"
               text=" “The team perfectly fit the specialized skill set required. They focused on the most essential features helping us launch the platform eight months faster than planned.”"
