@@ -1,3 +1,14 @@
+/* typography */
+.heading2 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: var(--font-color);
+}
+
+
 .header {
   background-image: url(../public/images/bg-pattern-home-2.svg);
   background-repeat: no-repeat;
@@ -14,6 +25,16 @@
 }
 .headingText {
   line-height: 28px;
+}
+
+.build {
+  background-color: var(--second-background-color);
+}
+
+.mainBar {
+  background-color: var(--second-color);
+  height: 4px;
+  width: 50px;
 }
 
 @media(min-width:768px) {

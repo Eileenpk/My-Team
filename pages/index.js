@@ -1,6 +1,6 @@
 import Head from "next/head";
 import styles from "@/styles/Home.module.css";
-import Footer from "./components/Footer";
+import BuildCard from "./components/BuildCard";
 import GetStarted from "./components/GetStarted";
 export default function Home() {
   return (
@@ -18,15 +18,41 @@ export default function Home() {
           Find the <br /> best{" "}
           <span className={`${styles.headingSpan}`}>talent</span>
         </h1>
-        
-        <p className={` mb-48 md:mb-64 xl:mb-0 xl:ml-auto ${styles.headingText}`}>
-        <span className={styles.bar}></span>
+
+        <p
+          className={` mb-48 md:mb-64 xl:mb-0 xl:ml-auto ${styles.headingText}`}
+        >
+          <span className={styles.bar}></span>
           Finding the right people and building high performing teams can be
           hard. Most companies aren’t tapping into the abundance of global
           talent. We’re about to change that.
         </p>
       </header>
-      <main className={styles.main}>
+      <main className={` ${styles.main}`}>
+        <section className={`pt-16 ${styles.build}`}>
+          <div className={` ${styles.mainBar}`}></div>
+          <h2 className={`${styles.heading2}`}>
+            Build & manage distributed teams like no one else.
+          </h2>
+          <BuildCard
+            src="./images/icon-person.svg"
+            heading="Experienced Individuals"
+            text="Our network is made up of highly experienced professionals who are passionate about what they do."
+          />
+
+          <BuildCard
+            src="./images/icon-cog.svg"
+            heading="Easy to Implement"
+            text="Our processes have been refined over years of implementation meaning our teams always deliver."
+          />
+
+          <BuildCard
+            src="./images/icon-chart.svg"
+            heading="Enhanced Productivity"
+            text="Our customized platform with in-built analytics helps you manage your distributed teams."
+          />
+        </section>
+
         <GetStarted />
       </main>
     </>
