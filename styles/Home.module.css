@@ -1,5 +1,6 @@
 /* typography */
-.heading2 {
+.heading2,
+.deliveringHeading2 {
   color: var(--font-color);
 }
 
@@ -45,6 +46,22 @@
   background-color: var(--second-color);
   height: 4px;
   width: 50px;
+}
+
+/* delivering section */
+
+.delivering {
+  /* border: 2px solid red; */
+  background-image: url('../public/images/bg-pattern-home-4-about-3.svg'), url('../public/images/bg-pattern-home-5.svg');
+  background-repeat: no-repeat, no-repeat;
+  background-position: left top, right bottom;
+}
+.deliveringHeading2 {
+  text-align: center;
+}
+
+.deliveringHeading2Span {
+  color: var(--sub-heading-color);
 }
 
 @media(min-width:768px) {
