@@ -49,6 +49,7 @@
 }
 .input {
     height: 42px;
+    width: 100%;
     background-color: var(--main-color);
     border-bottom: 1px solid var(--input-placeholder-color);
 }
@@ -77,6 +78,11 @@
     color: var(--second-color);
 }
 
+@media(min-width:768px) {
+    .input {
+        width: 542px;
+    }
+}
 @media(min-width:1280px) {
     .form {
         width: 703px;

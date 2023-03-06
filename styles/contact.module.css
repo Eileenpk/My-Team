@@ -23,8 +23,11 @@
 }
 
 @media(min-width:1280px) {
-
     .contactCardContainer {
         width: 540px;
     } 
+
+    .contact {
+        max-height: 100vh;
+    }
 }

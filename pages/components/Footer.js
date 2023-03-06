@@ -4,15 +4,15 @@ import Logo from "@/public/images/logo.svg";
 import styles from "@/styles/footer.module.css";
 export default function Footer() {
   return (
-    <footer className={`flex flex-col items-center pt-16 md:px-10 md:py-14 lg:py-12 ${styles.footer}`}>
+    <footer className={`flex flex-col items-center pt-16 md:px-10 md:py-14 xl:py-12 ${styles.footer}`}>
       <Image
         src={Logo}
         width={96}
         height={24}
         alt="My team"
-        className={`mb-12 md:mb-14 lg:mb-6 ${styles.logo}`}
+        className={`mb-12 md:mb-14 xl:mb-6 ${styles.logo}`}
       />
-      <nav className={`mb-6 md:mb-8 lg:mb-0 ${styles.navLinks}`}>
+      <nav className={`mb-6 md:mb-8 xl:mb-0 ${styles.navLinks}`}>
         <Link href="/" className={`mr-6 ${styles.navLink}`}>
           home
         </Link>
@@ -20,7 +20,7 @@ export default function Footer() {
           about
         </Link>
       </nav>
-      <address className={`mb-10 md:mb-9 lg:mb-0 ${styles.address}`}>
+      <address className={`mb-10 md:mb-9 xl:mb-0 ${styles.address}`}>
         987 Hillcrest Lane <br />
         Irvine, CA <br />
         California 92714
@@ -28,7 +28,7 @@ export default function Footer() {
         Call Us : 949-833-7432
       </address>
       <section
-        className={`flex gap-4 mb-4 md:mb-0 items-baseline lg:justify-end lg:self-start ${styles.socialLinksContainer}`}
+        className={`flex gap-4 mb-4 md:mb-0 items-baseline xl:justify-end lg:self-start ${styles.socialLinksContainer}`}
       >
         <Link href="https://www.facebook.com/">
           <svg
