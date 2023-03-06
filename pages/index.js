@@ -29,28 +29,33 @@ export default function Home() {
         </p>
       </header>
       <main className={` ${styles.main}`}>
-        <section className={`pt-16 ${styles.build}`}>
-          <div className={` ${styles.mainBar}`}></div>
-          <h2 className={`${styles.heading2}`}>
-            Build & manage distributed teams like no one else.
-          </h2>
-          <BuildCard
-            src="./images/icon-person.svg"
-            heading="Experienced Individuals"
-            text="Our network is made up of highly experienced professionals who are passionate about what they do."
-          />
+        <section className={`pt-16 px-[6%] w-[100%] ${styles.build}`}>
+          <div className={`xl:flex xl:w-[100%] xl:py-[80px] ${styles.buildContainer}`}>
+            <div className={` ${styles.mainBar}`}></div>
+            <h2 className={`mb-14 w-60 md:w-[100%] xl:w-[445px] xl:ml-[-50px] xl:mr-32 mt-8 xl:mt-14 ${styles.heading2}`}>
+              Build & manage distributed teams like no one else.
+            </h2>
+            <div className={`xl:mt-14`}>
+            <BuildCard
+              src="./images/icon-person.svg"
+              heading="Experienced Individuals"
+              text="Our network is made up of highly experienced professionals who are passionate about what they do."
+            />
 
-          <BuildCard
-            src="./images/icon-cog.svg"
-            heading="Easy to Implement"
-            text="Our processes have been refined over years of implementation meaning our teams always deliver."
-          />
+            <BuildCard
+              src="./images/icon-cog.svg"
+              heading="Easy to Implement"
+              text="Our processes have been refined over years of implementation meaning our teams always deliver."
+            />
 
-          <BuildCard
-            src="./images/icon-chart.svg"
-            heading="Enhanced Productivity"
-            text="Our customized platform with in-built analytics helps you manage your distributed teams."
-          />
+            <BuildCard
+              src="./images/icon-chart.svg"
+              heading="Enhanced Productivity"
+              text="Our customized platform with in-built analytics helps you manage your distributed teams."
+            />
+            </div>
+            
+          </div>
         </section>
 
         <GetStarted />
