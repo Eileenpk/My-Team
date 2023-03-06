@@ -72,6 +72,11 @@
     color: var(--second-color);
 }
 
+.success {
+    font-size: 20px;
+    color: var(--second-color);
+}
+
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
     .button:hover {

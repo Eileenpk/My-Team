@@ -1,7 +1,12 @@
 import styles from "@/styles/form.module.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { useForm, ValidationError } from "@formspree/react";
 export default function Form() {
-  // form data
+  const [isPopupShown, setIsPopupShown] = useState(false);
+  const [state, handleSubmit] = useForm("mqkobgzb");
+
+  //   form data
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -9,8 +14,6 @@ export default function Form() {
     title: "",
     message: "",
   });
-
-  const { name, email, company, title, message } = formData;
 
   const handleInput = (e) => {
     const { name, value } = e.target;
@@ -22,7 +25,7 @@ export default function Form() {
     });
   };
 
-  //   validate form data
+  const { name, email, company, title, message } = formData;
 
   const [isError, setIsError] = useState({
     nameError: "",
@@ -31,10 +34,11 @@ export default function Form() {
     titleError: "",
     messageError: "",
   });
-  
+
   const { nameError, emailError, companyError, titleError, messageError } =
     isError;
-  const validate = () => {
+  const validate = (e) => {
+    e.preventDefault();
     const errors = {};
     const emailRegex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
     for (let key in formData) {
@@ -44,21 +48,34 @@ export default function Form() {
     }
 
     if (!emailRegex.test(email)) {
-        errors.emailError = 'Please enter a valid email'
+      errors.emailError = "Please enter a valid email";
     }
     setIsError(errors);
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    validate();
+    if (!errors.keys) {
+      handleSubmit(e);
+      setFormData({
+        name: "",
+        email: "",
+        company: "",
+        title: "",
+        message: "",
+      });
+      setIsPopupShown(true);
+    } else if (errors) {
+      return;
+    }
   };
 
   return (
     <form
-      onSubmit={handleSubmit}
+      onSubmit={validate}
       className={`flex flex-col px-[7%] gap-6 pb-[88px] ${styles.form}`}
     >
+      {state.succeeded && (
+          <p className={`${styles.success} `}>
+            Thanks for sending us a message, we'll get back to you as soon as possible!
+          </p>
+      )}
       <label htmlFor="name" className={`${styles.labelVisuallyHidden}`}>
         Name
       </label>
@@ -71,9 +88,11 @@ export default function Form() {
         onChange={handleInput}
         className={`${styles.input}`}
       />
+
+      <ValidationError prefix="Name" field="name" errors={state.errors} />
       {nameError ? (
         <div role="error" className={styles.error}>
-          <p className={styles.errorText}>{nameError}</p>
+          <p className={styles.errorText}>{emailError}</p>
         </div>
       ) : (
         ""
@@ -83,13 +102,14 @@ export default function Form() {
       </label>
       <input
         id="email"
-        type="text"
+        type="email"
         name="email"
         placeholder="Email Address"
         value={email}
         onChange={handleInput}
         className={`${styles.input}`}
       />
+      <ValidationError prefix="Email" field="email" errors={state.errors} />
       {emailError ? (
         <div role="error" className={styles.error}>
           <p className={styles.errorText}>{emailError}</p>
@@ -109,6 +129,7 @@ export default function Form() {
         onChange={handleInput}
         className={`${styles.input}`}
       />
+      <ValidationError prefix="Company" field="company" errors={state.errors} />
       {companyError ? (
         <div role="error" className={styles.error}>
           <p className={styles.errorText}>{companyError}</p>
@@ -128,6 +149,7 @@ export default function Form() {
         onChange={handleInput}
         className={`${styles.input}`}
       />
+      <ValidationError prefix="Title" field="title" errors={state.errors} />
       {titleError ? (
         <div role="error" className={styles.error}>
           <p className={styles.errorText}>{titleError}</p>
@@ -146,14 +168,21 @@ export default function Form() {
         onChange={handleInput}
         className={` ${styles.input} ${styles.textarea}`}
       ></textarea>
-{messageError ? (
+      <ValidationError prefix="Message" field="message" errors={state.errors} />
+      {messageError ? (
         <div role="error" className={styles.error}>
           <p className={styles.errorText}>{messageError}</p>
         </div>
       ) : (
         ""
       )}
-      <button className={`button ${styles.button}`}>submit</button>
+      <button
+        className={`button ${styles.button}`}
+        type="submit"
+        disabled={state.submitting}
+      >
+        submit
+      </button>
     </form>
   );
 }
