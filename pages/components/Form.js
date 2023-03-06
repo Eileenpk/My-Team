@@ -69,7 +69,7 @@ export default function Form() {
   return (
     <form
       onSubmit={validate}
-      className={`flex flex-col px-[7%] gap-6 pb-[88px] ${styles.form}`}
+      className={`flex flex-col px-[7%] xl:px-0 xl:pr-40 gap-6 pb-[88px] xl:pb-[120px] ${styles.form}`}
     >
       {state.succeeded && (
           <p className={`${styles.success} `}>

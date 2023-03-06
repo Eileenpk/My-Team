@@ -17,9 +17,14 @@
     .headerText {
         font-size: 32px;
         line-height: 48px;
-    }    
+    }   
+    
+    
 }
 
 @media(min-width:1280px) {
-    
+
+    .contactCardContainer {
+        width: 540px;
+    } 
 }

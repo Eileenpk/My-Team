@@ -77,6 +77,16 @@
     color: var(--second-color);
 }
 
+@media(min-width:1280px) {
+    .form {
+        width: 703px;
+    }
+
+    .input {
+        width: 100%;
+    }
+}
+
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
     .button:hover {
