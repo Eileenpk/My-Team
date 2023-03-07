@@ -18,7 +18,8 @@ export default function About() {
         </p>
       </header>
       <main>
-        <section className={styles.directorSection}>
+        <section className={` px-[6%] pt-[88px] pb-[116px] ${styles.directorSection}`} >
+            <h2 className={`mb-12 ${styles.heading2}`}>Meet the directors</h2>
           <DirectorCard
             name="Nikita Marks"
             title="Founder & CEO"

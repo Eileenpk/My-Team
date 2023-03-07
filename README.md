@@ -53,12 +53,12 @@ The HTML has:
             - About (h1)
             - Info text (p)
             - Background image
-        - Meet the Directors
+        - Meet the Directors (h2)
             - Two background images
-            - director card
+            - director card 
                 - Avatar
-                - Full name (h2)
-                - Position (h3)
+                - Full name (h3)
+                - Position (p)
                 - Plus or minus btn that shows/hides
                     - Full name (h2)
                     - Quote

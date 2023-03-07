@@ -9,6 +9,21 @@
     line-height: 28px;
   }
 
+  /* Director Section */
+
+  .directorSection {
+    background-color: var(--third-background-color);
+    background-image: url(../public/images/bg-pattern-about-2-contact-1.svg), url(../public/images/bg-pattern-home-4-about-3.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: top -100px left -100px, right bottom;
+  }
+
+  .heading2 {
+    color: var(--font-color);
+    text-align: center;
+
+  }
+
   @media(min-width:768px) {
     .header {
         background-position: right -100px bottom;
