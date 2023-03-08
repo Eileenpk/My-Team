@@ -5,7 +5,7 @@ export default function DirectorCard({ name, title, text, src }) {
 
   const [isInfoShown, setIsInfoShown] = useState(false);
   return (
-    <div className={`mb-14 flex flex-col items-center ${styles.directorCard}`}>
+    <div className={`mb-14 flex flex-col items-center w-[327px] md:w-[281px] xl:w-[350px] ${styles.directorCard}`}>
       {!isInfoShown && <Image
         src={src}
         height={96}
