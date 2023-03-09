@@ -24,6 +24,15 @@
 
   }
 
+  /* Clients section */
+
+  .clients {
+    background-color: var(--second-background-color);
+  }
+
+  .heading2 {
+    color: var(--font-color);
+  }
   @media(min-width:768px) {
     .header {
         background-position: right -100px bottom;

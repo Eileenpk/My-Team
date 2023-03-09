@@ -1,6 +1,12 @@
 import styles from "@/styles/about.module.css";
 import GetStarted from "./components/GetStarted";
 import DirectorCard from "./components/DirectorCard";
+import Image from "next/image";
+import theVerge from '/public/images/logo-the-verge.png'
+import theJakarta from '/public/images/logo-jakarta-post.png'
+import theGuardian from '/public/images/logo-the-guardian.png'
+import techradar from '/public/images/logo-tech-radar.png'
+import gadgets from '/public/images/logo-gadgets-now.png'
 export default function About() {
   return (
     <>
@@ -60,7 +66,16 @@ export default function About() {
             />
           </div>
         </section>
-
+        <section className={`py-[88px] ${styles.clients}`}>
+          <h2 className={`mb-16 ${styles.heading2}`}>Some of our clients</h2>
+          <div className={`flex flex-col items-center gap-[50px]`}>
+            <Image src={theVerge} width={162} height={24} alt='The Verge'/>
+            <Image src={theJakarta} width={162} height={24} alt='The Jakarta Post'/>
+            <Image src={theGuardian} width={162} height={24} alt='The Guardian'/>
+            <Image src={techradar} width={162} height={24} alt='Techradar'/>
+            <Image src={gadgets} width={162} height={24} alt='Gadgets Now'/>
+          </div>
+        </section>
         <GetStarted />
       </main>
     </>

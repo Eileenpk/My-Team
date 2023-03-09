@@ -66,7 +66,7 @@ The HTML has:
         - Clients
             - Background image
                 - Some of our clients (h2)
-                - list of clients (h3)
+                - list of clients (Image)
         - Ready to get started
         - Footer
 
