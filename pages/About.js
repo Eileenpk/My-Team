@@ -66,9 +66,9 @@ export default function About() {
             />
           </div>
         </section>
-        <section className={`py-[88px] ${styles.clients}`}>
-          <h2 className={`mb-16 ${styles.heading2}`}>Some of our clients</h2>
-          <div className={`flex flex-col items-center gap-[50px]`}>
+        <section className={`py-[88px] lg:py-[100px] ${styles.clients}`}>
+          <h2 className={`mb-16 lg:mb-12 ${styles.heading2}`}>Some of our clients</h2>
+          <div className={`flex flex-col items-center gap-[50px] lg:flex-row lg:justify-center`}>
             <Image src={theVerge} width={162} height={24} alt='The Verge'/>
             <Image src={theJakarta} width={162} height={24} alt='The Jakarta Post'/>
             <Image src={theGuardian} width={162} height={24} alt='The Guardian'/>

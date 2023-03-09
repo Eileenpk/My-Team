@@ -28,6 +28,9 @@
 
   .clients {
     background-color: var(--second-background-color);
+    background-image: url(../public/images/bg-pattern-about-4.svg);
+    background-repeat: no-repeat;
+    background-position: top -100px left;
   }
 
   .heading2 {
@@ -62,5 +65,9 @@
         text-align: left;
         min-width: 730px;
         max-width: 730px;
+    }
+
+    .clients {
+      background-position: top left;
     }
   }
