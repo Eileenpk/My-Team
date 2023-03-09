@@ -21,7 +21,7 @@ export default function Home() {
         </h1>
 
         <p
-          className={` mb-48 md:mb-64 xl:mb-0 xl:ml-auto ${styles.headingText}`}
+          className={`mb-48 md:mb-64 xl:mb-0 xl:ml-auto ${styles.headingText}`}
         >
           <span className={styles.bar}></span>
           Finding the right people and building high performing teams can be
@@ -29,7 +29,7 @@ export default function Home() {
           talent. We’re about to change that.
         </p>
       </header>
-      <main className={` ${styles.main}`}>
+      <main className={`${styles.main}`}>
         <section className={`pt-16 px-[6%] w-[100%] ${styles.build}`}>
           <div
             className={`xl:flex xl:w-[100%] xl:py-[80px] ${styles.buildContainer}`}
@@ -62,12 +62,12 @@ export default function Home() {
           </div>
         </section>
 
-        <section className={` pt-[140px] pb-[116px] px-[6%] md:flex md:flex-col md:items-center ${styles.delivering}`}>
+        <section className={`pt-[140px] pb-[116px] px-[6%] md:flex md:flex-col md:items-center ${styles.delivering}`}>
           <h2 className={`mb-12 md:w-[573px] xl:w-[932px] ${styles.deliveringHeading2}`}>
             Delivering real results for top companies. Some of our{" "}
             <span className={`${styles.deliveringHeading2Span}`}>success stories.</span>
           </h2>
-          <section className={`xl:flex  xl:gap-[30px] ${styles.quoteSection}`}>
+          <section className={`xl:flex xl:gap-[30px] ${styles.quoteSection}`}>
             <SuccessCard
               src="/images/avatar-kady.jpg"
               text=" “The team perfectly fit the specialized skill set required. They focused on the most essential features helping us launch the platform eight months faster than planned.”"

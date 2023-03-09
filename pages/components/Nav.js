@@ -36,7 +36,7 @@ export default function Nav() {
             height="17"
             alt="open navigation menu"
             role="button"
-            className={` ${styles.hamburgerMenu}`}
+            className={`${styles.hamburgerMenu}`}
             onClick={() => setIsNavOpen(true)}
           >
             <g fill="#FFF" fillRule="evenodd">

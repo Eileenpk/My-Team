@@ -17,7 +17,7 @@ export default function DirectorCard({ name, title, text, src }) {
      {!isInfoShown && <p className={` ${styles.title}`}>{title}</p>}
       {isInfoShown && (
         <div className={`flex flex-col items-center px-[14%] ${styles.info}`}>
-          <p className={``}>{text}</p>
+          <p>{text}</p>
 
           <div className={`flex mt-6 gap-4`}>
             <a href="https://twitter.com/?lang=en" aria-label="Open Twitter">

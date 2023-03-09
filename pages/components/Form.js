@@ -166,7 +166,7 @@ export default function Form() {
         placeholder="Message"
         value={message}
         onChange={handleInput}
-        className={` ${styles.input} ${styles.textarea}`}
+        className={`${styles.input} ${styles.textarea}`}
       ></textarea>
       <ValidationError prefix="Message" field="message" errors={state.errors} />
       {messageError ? (
