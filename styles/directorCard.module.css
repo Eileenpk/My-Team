@@ -34,6 +34,22 @@
 }
 
 .lightBtn {
-    background-color: var(--sub-heading-color);
-    
+    background-color: var(--sub-heading-color); 
 }
+
+/* Enable hover only on non-touch devices */
+@media (hover: hover) and (pointer: fine) {
+    .button:hover,
+    .lightBtn:hover {
+      cursor: pointer;
+    }
+
+    .button:hover {
+        background-color: var(--sub-heading-color);
+    }
+
+    .lightBtn:hover {
+        background-color: var(--second-color);
+    }
+  
+  }
