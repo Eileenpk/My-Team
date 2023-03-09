@@ -1,5 +1,5 @@
 import styles from "@/styles/form.module.css";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { useForm, ValidationError } from "@formspree/react";
 export default function Form() {
   const [state, handleSubmit] = useForm("mqkobgzb");
