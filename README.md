@@ -165,12 +165,12 @@ Users should be able to:
 
 ### Screenshot
 
-![screen shot of full screen webpage]()
-![screen shot of mobile webpage]()
+![screen shot of full screen webpage](https://github.com/Eileenpk/My-Team/blob/main/public/images/Screenshot-desktop.png)
+![screen shot of mobile webpage](https://github.com/Eileenpk/My-Team/blob/main/public/images/Screenshot-mobile.png)
 ### Links
 
-- Solution URL: [GitHub]()
-- Live Site URL: [live site]()
+- Solution URL: [GitHub](https://github.com/Eileenpk/My-Team)
+- Live Site URL: [live site](https://my-team-beta.vercel.app/)
 
 ### Built with
 
