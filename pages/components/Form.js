@@ -2,7 +2,6 @@ import styles from "@/styles/form.module.css";
 import { useEffect, useState } from "react";
 import { useForm, ValidationError } from "@formspree/react";
 export default function Form() {
-  const [isPopupShown, setIsPopupShown] = useState(false);
   const [state, handleSubmit] = useForm("mqkobgzb");
 
   //   form data
@@ -51,7 +50,8 @@ export default function Form() {
       errors.emailError = "Please enter a valid email";
     }
     setIsError(errors);
-    if (!errors.keys) {
+
+    if (Object.keys(errors).length === 0) {
       handleSubmit(e);
       setFormData({
         name: "",
@@ -60,7 +60,6 @@ export default function Form() {
         title: "",
         message: "",
       });
-      setIsPopupShown(true);
     } else if (errors) {
       return;
     }
@@ -72,9 +71,10 @@ export default function Form() {
       className={`flex flex-col items-center px-[7%] xl:px-0 xl:pr-40 gap-6 pb-[88px] xl:pb-[120px] ${styles.form}`}
     >
       {state.succeeded && (
-          <p className={`${styles.success} `}>
-            Thanks for sending us a message, we'll get back to you as soon as possible!
-          </p>
+        <p className={`${styles.success} `}>
+          Thanks for sending us a message, we'll get back to you as soon as
+          possible!
+        </p>
       )}
       <label htmlFor="name" className={`${styles.labelVisuallyHidden}`}>
         Name
@@ -92,7 +92,7 @@ export default function Form() {
       <ValidationError prefix="Name" field="name" errors={state.errors} />
       {nameError ? (
         <div role="error" className={styles.error}>
-          <p className={styles.errorText}>{emailError}</p>
+          <p className={styles.errorText}>{nameError}</p>
         </div>
       ) : (
         ""
