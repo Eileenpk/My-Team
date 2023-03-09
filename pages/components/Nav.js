@@ -1,3 +1,4 @@
+import Head from "next/head";
 import Link from "next/link";
 import styles from "@/styles/nav.module.css";
 import { useState, useEffect } from "react";
@@ -69,7 +70,7 @@ export default function Nav() {
         aria-hidden={isNavOpen ? "false" : "true"}
         className={
           !isNavOpen ? `${styles.navClosed}` : ` ${styles.navScreenOverLay}`
-        }
+        } 
       >
         <div className={`pt-14 pl-12 pr-6 ${styles.navContainer}`}>
           <svg
