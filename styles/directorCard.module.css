@@ -40,7 +40,8 @@
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
     .button:hover,
-    .lightBtn:hover {
+    .lightBtn:hover,
+    .socialIcon:hover {
       cursor: pointer;
     }
 
@@ -50,6 +51,10 @@
 
     .lightBtn:hover {
         background-color: var(--second-color);
+    }
+
+    .socialIcon:hover path {
+        fill: var(--second-color);
     }
   
   }
