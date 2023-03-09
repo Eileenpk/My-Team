@@ -32,14 +32,17 @@ export default function Nav() {
 
         {width < 768 && (
           <svg
+            aria-labelledby="title"
             xmlns="http://www.w3.org/2000/svg"
             width="20"
             height="17"
-            alt="open navigation menu"
             role="button"
             className={`${styles.hamburgerMenu}`}
             onClick={() => setIsNavOpen(true)}
           >
+            <title id="title" lang="en">
+              open navigation menu
+            </title>
             <g fill="#FFF" fillRule="evenodd">
               <path d="M0 0h20v3H0zM0 7h20v3H0zM0 14h20v3H0z" />
             </g>
@@ -70,18 +73,21 @@ export default function Nav() {
         aria-hidden={isNavOpen ? "false" : "true"}
         className={
           !isNavOpen ? `${styles.navClosed}` : ` ${styles.navScreenOverLay}`
-        } 
+        }
       >
         <div className={`pt-14 pl-12 pr-6 ${styles.navContainer}`}>
           <svg
+            aria-labelledby="title"
             className={`self-end ${styles.closeMenu}`}
             xmlns="http://www.w3.org/2000/svg"
             width="18"
             height="17"
-            alt="Close navigation menu"
             role="button"
             onClick={() => setIsNavOpen(false)}
           >
+            <title id="title" lang="en">
+              Close navigation menu
+            </title>
             <path
               fill="#FFF"
               fillRule="evenodd"
