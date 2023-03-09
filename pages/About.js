@@ -1,3 +1,4 @@
+import Head from "next/head";
 import styles from "@/styles/about.module.css";
 import GetStarted from "./components/GetStarted";
 import DirectorCard from "./components/DirectorCard";
@@ -10,6 +11,24 @@ import gadgets from '/public/images/logo-gadgets-now.png'
 export default function About() {
   return (
     <>
+          <Head>
+        <title>
+        About MyTeam - Building Dynamic Teams with Top Global Talent
+        </title>
+        <meta
+          name="description"
+          content="At MyTeam, we believe that a strong team is the foundation of any successful business. That's why we're dedicated to providing our users with the tools and resources they need to build a high-performing team that meets their unique needs. Whether you're looking to expand your team in a new market, recruit top talent for a particular project, or simply enhance your company's overall performance, we're here to help."
+        />
+        <meta
+          property="og:title"
+          content="About MyTeam - Building Dynamic Teams with Top Global Talent for Your Company"
+        />
+        <meta
+          property="og:description"
+          content="At MyTeam, we believe that a strong team is the foundation of any successful business. That's why we're dedicated to providing our users with the tools and resources they need to build a high-performing team that meets their unique needs."
+        />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <header
         className={`flex flex-col items-center pt-20 pb-[108px] px-[11%] md:py-28 xl:py-[120px] xl:flex-row justify-between ${styles.header}`}
       >
