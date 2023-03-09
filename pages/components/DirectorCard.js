@@ -31,13 +31,13 @@ export default function DirectorCard({ name, title, text, src }) {
           <div className={`flex mt-6 gap-4`}>
             <a href="https://twitter.com/?lang=en" aria-label="Open Twitter">
               <svg
-                aria-labelledby="title"
+                aria-labelledby="Twitter-icon"
                 className={`${styles.socialIcon}`}
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
                 height="20"
               >
-                <title id="title" lang="en">
+                <title id="Twitter-icon" lang="en">
                   Twitter icon
                 </title>
                 <path
@@ -48,13 +48,13 @@ export default function DirectorCard({ name, title, text, src }) {
             </a>
             <a href="https://www.linkedin.com" aria-label="Open LinkedIn">
               <svg
-                aria-labelledby="title"
+                aria-labelledby="LinkedIn-icon"
                 className={`${styles.socialIcon}`}
                 xmlns="http://www.w3.org/2000/svg"
                 width="20"
                 height="20"
               >
-                <title id="title" lang="en">
+                <title id="LinkedIn-icon" lang="en">
                   LinkedIn icon
                 </title>
                 <path
@@ -78,13 +78,13 @@ export default function DirectorCard({ name, title, text, src }) {
       >
         {isInfoShown ? (
           <svg
-            aria-labelledby="title"
+            aria-labelledby="Close-icon"
             className={`${styles.closeIcon}`}
             xmlns="http://www.w3.org/2000/svg"
             width="18"
             height="17"
           >
-            <title id="title" lang="en">
+            <title id="Close-icon" lang="en">
               Close icon
             </title>
             <path
@@ -95,13 +95,13 @@ export default function DirectorCard({ name, title, text, src }) {
           </svg>
         ) : (
           <svg
-            aria-labelledby="title"
+            aria-labelledby="Open-icon"
             className={`${styles.closeIcon}`}
             xmlns="http://www.w3.org/2000/svg"
             width="16"
             height="16"
           >
-            <title id="title" lang="en">
+            <title id="Open-icon" lang="en">
               Open icon
             </title>
             <path

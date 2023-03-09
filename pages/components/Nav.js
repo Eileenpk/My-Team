@@ -32,7 +32,7 @@ export default function Nav() {
 
         {width < 768 && (
           <svg
-            aria-labelledby="title"
+            aria-labelledby="open"
             xmlns="http://www.w3.org/2000/svg"
             width="20"
             height="17"
@@ -40,7 +40,7 @@ export default function Nav() {
             className={`${styles.hamburgerMenu}`}
             onClick={() => setIsNavOpen(true)}
           >
-            <title id="title" lang="en">
+            <title id="open" lang="en">
               open navigation menu
             </title>
             <g fill="#FFF" fillRule="evenodd">
@@ -77,7 +77,7 @@ export default function Nav() {
       >
         <div className={`pt-14 pl-12 pr-6 ${styles.navContainer}`}>
           <svg
-            aria-labelledby="title"
+            aria-labelledby="Close"
             className={`self-end ${styles.closeMenu}`}
             xmlns="http://www.w3.org/2000/svg"
             width="18"
@@ -85,7 +85,7 @@ export default function Nav() {
             role="button"
             onClick={() => setIsNavOpen(false)}
           >
-            <title id="title" lang="en">
+            <title id="Close" lang="en">
               Close navigation menu
             </title>
             <path
