@@ -15,25 +15,35 @@ export default function Nav() {
   const [isNavOpen, setIsNavOpen] = useState(false);
 
   return (
-    <nav className={`${styles.nav} mt-12 xl:mt-[73px] px-6 md:px-10 flex items-start md:mt-16`}>
+    <nav
+      className={`${styles.nav} mt-12 xl:mt-[73px] px-6 md:px-10 flex items-start md:mt-16`}
+    >
       <div
         className={`flex items-center justify-between ${styles.navClosedContainer}`}
       >
-        <Image src={Logo} width={128} height={32} alt="My Team" className={`mr-12 ${styles.logo}`}/>
+        <Image
+          src={Logo}
+          width={128}
+          height={32}
+          alt="My Team"
+          className={`mr-12 ${styles.logo}`}
+        />
 
-       {width < 768 && <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="20"
-          height="17"
-          alt="open navigation menu"
-          role="button"
-          className={` ${styles.hamburgerMenu}`}
-          onClick={() => setIsNavOpen(true)}
-        >
-          <g fill="#FFF" fillRule="evenodd">
-            <path d="M0 0h20v3H0zM0 7h20v3H0zM0 14h20v3H0z" />
-          </g>
-        </svg>}
+        {width < 768 && (
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="17"
+            alt="open navigation menu"
+            role="button"
+            className={` ${styles.hamburgerMenu}`}
+            onClick={() => setIsNavOpen(true)}
+          >
+            <g fill="#FFF" fillRule="evenodd">
+              <path d="M0 0h20v3H0zM0 7h20v3H0zM0 14h20v3H0z" />
+            </g>
+          </svg>
+        )}
 
         {width > 768 ? (
           <div className={`flex items-center gap-6 ${styles.navLinks}`}>
@@ -79,15 +89,24 @@ export default function Nav() {
           </svg>
 
           <div className={`flex flex-col gap-6 ${styles.navLinks}`}>
-            <Link className={`${styles.link} font-semibold link`} href="/">
+            <Link
+              className={`${styles.link} font-semibold link`}
+              href="/"
+              onClick={() => setIsNavOpen(false)}
+            >
               home
             </Link>
-            <Link className={`${styles.link} font-semibold link`} href="/About">
+            <Link
+              className={`${styles.link} font-semibold link`}
+              href="/About"
+              onClick={() => setIsNavOpen(false)}
+            >
               about
             </Link>
             <Link
               className={`mt-3 ${styles.link} ${styles.button} font-semibold button`}
               href="/Contact"
+              onClick={() => setIsNavOpen(false)}
             >
               contact us
             </Link>
