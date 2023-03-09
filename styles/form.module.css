@@ -2,11 +2,11 @@
 .input {
     color: var(--font-color);
     font-family: var(--font-family);
-    font-size: 15px;
+    font-size: 0.9375rem;
     font-weight: 600;
-    line-height: 25px;
-    letter-spacing: -0.11538461595773697px;
-    text-indent: 16px;
+    line-height: 1.5625rem;
+    letter-spacing: -0.0072rem;
+    text-indent: 1rem;
 }
 .input::placeholder {
     color: var(--input-placeholder-color);
@@ -15,28 +15,28 @@
 .input:focus::placeholder{
     color: var(--second-color);
     font-family: var(--font-family);
-    font-size: 15px;
+    font-size: 0.9375rem;
     font-weight: 600;
-    line-height: 25px;
-    letter-spacing: -0.11538461595773697px;
+    line-height: 1.5625rem;
+    letter-spacing: -0.0072rem;
 }
 
 .button {
     background-color: var(--font-color);
     color: var(--main-color);
     font-family: var(--font-family);
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 600;
-    line-height: 28px;
-    width: 123px;
+    line-height: 1.75rem;
+    width: 7.6875rem;
 }
 
 .labelVisuallyHidden {
     position: absolute !important;
-    height: 1px;
-    width: 1px;
+    height: 0.0625rem;
+    width: 0.0625rem;
     overflow: hidden;
-    clip: rect(1px, 1px, 1px, 1px);
+    clip: rect(0.0625rem, 0.0625rem, 0.0625rem, 0.0625rem);
     white-space: nowrap;
 }
 
@@ -45,29 +45,29 @@
 .form {
     background-image: url(../public/images/bg-pattern-contact-2.svg);
     background-repeat: no-repeat;
-    background-position: bottom -100px right -112px;
+    background-position: bottom -6.25rem right -7rem;
 }
 .input {
-    height: 42px;
+    height: 2.625rem;
     width: 100%;
     background-color: var(--main-color);
-    border-bottom: 1px solid var(--input-placeholder-color);
+    border-bottom: 0.0625rem solid var(--input-placeholder-color);
 }
 
 
 .input:focus {
     outline: none;
-    border-bottom: 1px solid#79C8C7; 
+    border-bottom: 0.0625rem solid#79C8C7; 
 }
 
 .textarea {
-    height: 107px;
+    height: 6.6875rem;
 }
 
 .error {
     align-self: flex-start;
-    margin-left: 14px;
-    margin-top: -16px;
+    margin-left: 0.875rem;
+    margin-top: -1rem;
 }
 
 .error .errorText {
@@ -75,18 +75,18 @@
 }
 
 .success {
-    font-size: 20px;
+    font-size: 1.25rem;
     color: var(--second-color);
 }
 
-@media(min-width:768px) {
+@media(min-width:48rem) {
     .input {
-        width: 542px;
+        width: 33.875rem;
     }
 }
-@media(min-width:1280px) {
+@media(min-width:80rem) {
     .form {
-        width: 703px;
+        width: 43.9375rem;
     }
 
     .input {

@@ -6,35 +6,35 @@
 }
 
 .heading {
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 700;
-    line-height: 32px;
-    letter-spacing: 0px;
+    line-height: 2rem;
+    letter-spacing: 0rem;
     text-align: center;
     color: var(--main-color);
 }
 
 .button {
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 600;
-    line-height: 28px;
-    letter-spacing: 0px;
+    line-height: 1.75rem;
+    letter-spacing: 0rem;
     color: var(--main-color);
     border-color: var(--main-color);
 }
 
-@media(min-width:768px) {
+@media(min-width:48rem) {
     .heading {
-        font-size: 32px;
-        line-height: 32px;
+        font-size: 2rem;
+        line-height: 2rem;
         margin-left: auto;
     }
 }
 
-@media(min-width:1200px) {
+@media(min-width:75rem) {
     .heading {
-        font-size: 48px;
-        line-height: 48px;
+        font-size: 3rem;
+        line-height: 3rem;
         text-align: left;
     }
 }

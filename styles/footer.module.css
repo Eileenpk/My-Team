@@ -1,20 +1,20 @@
 .navLink {
     color: var(--font-color);
     font-family: var(--font-family);
-    font-size: 15px;
+    font-size: 0.9375rem;
     font-weight: 600;
-    line-height: 25px;
-    letter-spacing: 0px;
+    line-height: 1.5625rem;
+    letter-spacing: 0rem;
     text-align: left;
 }
 
 .address,
 .copyright {
     font-family: var(--font-family);
-    font-size: 15px;
+    font-size: 0.9375rem;
     font-weight: 600;
-    line-height: 25px;
-    letter-spacing: 0px;
+    line-height: 1.5625rem;
+    letter-spacing: 0rem;
     text-align: center;
     color: var(--second-font-color);
     font-style: normal;     
@@ -25,7 +25,7 @@
 }
 
 
-@media(min-width:768px) {
+@media(min-width:48rem) {
     .footer {
         display: grid;
         grid-template-areas: 
@@ -41,7 +41,7 @@
     .address {
         grid-area: address;
         text-align: right;
-        margin-right: 10px;
+        margin-right: 0.625rem;
     }
 
     .navLinks {
@@ -58,7 +58,7 @@
     }
 }
 
-@media(min-width:1280px) {
+@media(min-width:80rem) {
     .footer {
         padding-left: 11.5%;
         padding-right: 11.5%;
@@ -68,8 +68,8 @@
     }
 
     .logo {
-        width: 160px;
-        height: 40px;
+        width: 10rem;
+        height: 2.5rem;
     }
 
     .address {

@@ -24,7 +24,7 @@
   display: none;
 }
 .headingText {
-  line-height: 28px;
+  line-height: 1.75rem;
 }
 
 /* build section */
@@ -36,22 +36,22 @@
   background-color: var(--second-background-color);
   background-image: url('../public/images/bg-pattern-home-3.svg');
   background-repeat: no-repeat;
-  background-position: right -100px top;
+  background-position: right -6.25rem top;
 }
 
 .buildContainer {
-  max-width: 573px;
+  max-width: 35.8125rem;
 }
 .mainBar {
   background-color: var(--second-color);
-  height: 4px;
-  width: 50px;
+  height: 0.25rem;
+  width: 3.125rem;
 }
 
 /* delivering section */
 
 .delivering {
-  /* border: 2px solid red; */
+  /* border: 0.125rem solid red; */
   background-image: url('../public/images/bg-pattern-home-4-about-3.svg'), url('../public/images/bg-pattern-home-5.svg');
   background-repeat: no-repeat, no-repeat;
   background-position: left top, right bottom;
@@ -64,14 +64,14 @@
   color: var(--sub-heading-color);
 }
 
-@media(min-width:768px) {
+@media(min-width:48rem) {
   /* header section */
   .header {
     background-size: unset;
   }
 
   .headingText {
-    max-width: 457px;
+    max-width: 28.5625rem;
   }
 
   /* delivering section */
@@ -80,7 +80,7 @@
   }
 }
 
-@media(min-width:1280px) {
+@media(min-width:80rem) {
 
 /* header */
   .header {
@@ -88,36 +88,36 @@
     padding-right: 11.5%;
     background-image: url(../public/images/bg-pattern-home-2.svg), url(../public/images/bg-pattern-home-1.svg);
     background-repeat: no-repeat;
-    background-position: right 15% bottom, left -100px top 129px;
+    background-position: right 15% bottom, left -6.25rem top 8.0625rem;
     background-size: unset;
   }
   .heading {
-    width: 635px;
+    width: 39.6875rem;
   }
 
   .bar {
     display: block;
     position: relative;
-    bottom: 79px;
-    left: 0px;
-    width: 50px;
-    height:4px;
+    bottom: 4.9375rem;
+    left: 0rem;
+    width: 3.125rem;
+    height:0.25rem;
     background-color: var(--sub-heading-color);
   }
   .headingText {
-    font-size: 18px;
-    line-height: 28px;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
     text-align: left;
-    width: 445px;
+    width: 27.8125rem;
   }
 
   /* build section */
  
   .build {
-    background-position: right -100px bottom;
+    background-position: right -6.25rem bottom;
   }
   .buildContainer {
-    max-width: 1110px;
+    max-width: 69.375rem;
   }
 
   /* delivering section */

@@ -1,13 +1,13 @@
 .directorCard {
     background-color: var(--second-background-color);
-    height: 253px;
+    height: 15.8125rem;
     position: relative;
 }
 
 
 .avatar {
     border-radius: 50%;
-    border: 2px solid #C4FFFE;
+    border: 0.125rem solid #C4FFFE;
 }
 
 .heading3 {
@@ -15,21 +15,21 @@
 }
 
 .title {
-    font-size: 15px;
+    font-size: 0.9375rem;
     font-style: italic;
     font-weight: 500;
-    line-height: 25px;
-    letter-spacing: 0px;
+    line-height: 1.5625rem;
+    letter-spacing: 0rem;
     text-align: center;
 }
 
 .button {
     background-color: var(--second-color);
-    width: 56px;
-    height: 56px;
+    width: 3.5rem;
+    height: 3.5rem;
     border-radius: 50%;
     position: absolute;
-    bottom: -28px;
+    bottom: -1.75rem;
     transition: background-color 500ms;
 }
 
